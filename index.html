@@ -15,6 +15,7 @@
       rel="stylesheet"
     >
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="site-header" aria-label="Primary navigation">
@@ -47,7 +48,7 @@
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="#work">View my work</a>
-            <a class="button button-text" href="#services">See services <span aria-hidden="true">-></span></a>
+            <a class="button button-text" href="#services">See services <span class="link-cue" aria-hidden="true"></span></a>
           </div>
         </div>
 
@@ -70,7 +71,7 @@
             <p class="eyebrow">Featured Work</p>
             <h2 id="work-title">A few favorites.</h2>
           </div>
-          <a class="section-link" href="#work">View all projects <span aria-hidden="true">-></span></a>
+          <a class="section-link" href="#work">View all projects <span class="link-cue" aria-hidden="true"></span></a>
         </div>
 
         <div class="project-grid">
@@ -81,7 +82,7 @@
             <h3>Maison Duvet</h3>
             <p class="project-type">Web Design & Branding</p>
             <p>A soft, elevated brand and website for a homewares studio.</p>
-            <a class="project-link" href="#work">View project <span aria-hidden="true">-></span></a>
+            <a class="project-link" href="#work" aria-label="View Maison Duvet project">View project</a>
           </article>
 
           <article class="project-card">
@@ -91,7 +92,7 @@
             <h3>Sage Atelier</h3>
             <p class="project-type">Social Media & Content Design</p>
             <p>Content strategy and custom templates that bring warmth and consistency.</p>
-            <a class="project-link" href="#work">View project <span aria-hidden="true">-></span></a>
+            <a class="project-link" href="#work" aria-label="View Sage Atelier project">View project</a>
           </article>
 
           <article class="project-card">
@@ -101,7 +102,7 @@
             <h3>Cafe Lumiere</h3>
             <p class="project-type">Web Design</p>
             <p>A one-page website for a neighborhood cafe, built to feel calm and timeless.</p>
-            <a class="project-link" href="#work">View project <span aria-hidden="true">-></span></a>
+            <a class="project-link" href="#work" aria-label="View Cafe Lumiere project">View project</a>
           </article>
 
           <article class="project-card">
@@ -111,7 +112,7 @@
             <h3>Terre & Co.</h3>
             <p class="project-type">Brand Identity</p>
             <p>Brand identity and visual system for a sustainable goods brand rooted in earthy values.</p>
-            <a class="project-link" href="#work">View project <span aria-hidden="true">-></span></a>
+            <a class="project-link" href="#work" aria-label="View Terre and Co project">View project</a>
           </article>
         </div>
       </section>
@@ -122,7 +123,7 @@
         <div class="contact-note">
           <p>Have a project in mind or just want to say hello?</p>
           <p>I'd love to hear from you.</p>
-          <a class="button button-primary" href="mailto:hello@example.com">Get in touch <span aria-hidden="true">-></span></a>
+          <a class="button button-primary" href="mailto:hello@example.com">Get in touch</a>
         </div>
       </section>
     </main>
@@ -136,5 +137,38 @@
         <a href="mailto:hello@example.com" aria-label="Email">Mail</a>
       </nav>
     </footer>
+
+    <div class="music-widget" data-music-widget>
+      <span class="music-label" id="music-label">Browsing Beats</span>
+      <div class="music-control-row">
+        <button
+          class="music-volume music-volume-down"
+          type="button"
+          aria-label="Lower browsing beats volume"
+          data-volume-action="down"
+        >
+          <span aria-hidden="true">&minus;</span>
+        </button>
+        <button
+          class="music-toggle"
+          type="button"
+          aria-label="Play browsing beats"
+          aria-describedby="music-label"
+          aria-pressed="false"
+          data-music-toggle
+        >
+          <span class="music-note" aria-hidden="true">&#9834;</span>
+        </button>
+        <button
+          class="music-volume music-volume-up"
+          type="button"
+          aria-label="Raise browsing beats volume"
+          data-volume-action="up"
+        >
+          <span aria-hidden="true">+</span>
+        </button>
+      </div>
+      <audio data-music-player preload="none"></audio>
+    </div>
   </body>
 </html>
