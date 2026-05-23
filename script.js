@@ -16,13 +16,14 @@ const tracks = [
     src: "assets/audio/left-you-a-note.mp3",
   },
   {
-    title: "Unfolding",
-    src: "assets/audio/unfolding.mp3",
+    title: "Notes on the Windowpane",
+    src: "assets/audio/notes-on-the-windowpane.mp3",
   },
 ];
 
 let currentTrackIndex = 0;
 let isPlaying = false;
+let hasVisitedMusicWidget = false;
 
 const clampVolume = (volume) => Math.min(1, Math.max(0, volume));
 
@@ -46,6 +47,21 @@ const changeVolume = (direction) => {
 
   musicPlayer.volume = clampVolume(nextVolume);
   updateVolumeState();
+};
+
+const tuckWidgetOnLeave = () => {
+  musicWidget.classList.add("is-tucked");
+  musicWidget.classList.remove("is-hovering");
+
+  if (musicWidget.contains(document.activeElement)) {
+    document.activeElement.blur();
+  }
+};
+
+const markMusicWidgetVisited = () => {
+  hasVisitedMusicWidget = true;
+  musicWidget.classList.add("is-hovering");
+  musicWidget.classList.remove("is-tucked");
 };
 
 const setTrack = (trackIndex) => {
@@ -119,11 +135,29 @@ if (musicWidget && musicToggle && musicPlayer && tracks.length > 0) {
     }
   }, 4200);
 
+  musicWidget.addEventListener("pointerenter", markMusicWidgetVisited);
+  musicWidget.addEventListener("pointerover", markMusicWidgetVisited);
+
   musicToggle.addEventListener("click", () => {
+    markMusicWidgetVisited();
+
     if (isPlaying) {
       pauseMusic();
     } else {
       startMusic();
+    }
+  });
+
+  musicWidget.addEventListener("pointerleave", tuckWidgetOnLeave);
+
+  document.addEventListener("pointermove", (event) => {
+    if (musicWidget.contains(event.target)) {
+      markMusicWidgetVisited();
+      return;
+    }
+
+    if (hasVisitedMusicWidget && !musicWidget.contains(event.target)) {
+      tuckWidgetOnLeave();
     }
   });
 
@@ -140,11 +174,5 @@ if (musicWidget && musicToggle && musicPlayer && tracks.length > 0) {
   musicPlayer.addEventListener("error", () => {
     updatePlaybackState(false);
     musicToggle.setAttribute("aria-label", "Audio could not be played");
-  });
-
-  document.addEventListener("visibilitychange", () => {
-    if (document.hidden && isPlaying) {
-      pauseMusic();
-    }
   });
 }

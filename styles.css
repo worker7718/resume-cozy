@@ -562,8 +562,8 @@ h3 {
 }
 
 .music-widget:hover .music-label,
-.music-widget:focus-within .music-label,
-.music-widget.is-playing .music-label {
+.music-widget.is-hovering .music-label,
+.music-widget:focus-within .music-label {
   opacity: 1;
   transform: translateY(0);
 }
@@ -647,17 +647,20 @@ h3 {
 }
 
 .music-widget:hover .music-volume,
+.music-widget.is-hovering .music-volume,
 .music-widget:focus-within .music-volume {
   opacity: 1;
   pointer-events: auto;
 }
 
 .music-widget:hover .music-volume-down,
+.music-widget.is-hovering .music-volume-down,
 .music-widget:focus-within .music-volume-down {
   transform: translate(calc(-50% - 40px), -50%) scale(1);
 }
 
 .music-widget:hover .music-volume-up,
+.music-widget.is-hovering .music-volume-up,
 .music-widget:focus-within .music-volume-up {
   transform: translate(calc(-50% + 33px), -50%) scale(1);
 }
@@ -898,11 +901,13 @@ h3 {
   }
 
   .music-widget:hover .music-volume-down,
+  .music-widget.is-hovering .music-volume-down,
   .music-widget:focus-within .music-volume-down {
     transform: translate(calc(-50% - 36px), -50%) scale(1);
   }
 
   .music-widget:hover .music-volume-up,
+  .music-widget.is-hovering .music-volume-up,
   .music-widget:focus-within .music-volume-up {
     transform: translate(calc(-50% + 30px), -50%) scale(1);
   }
