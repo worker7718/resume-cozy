@@ -16,8 +16,8 @@ const tracks = [
     src: "assets/audio/left-you-a-note.mp3",
   },
   {
-    title: "Notes on the Windowpane",
-    src: "assets/audio/notes-on-the-windowpane.mp3",
+    title: "Sunday Light",
+    src: "assets/audio/sunday-light.mp3",
   },
 ];
 

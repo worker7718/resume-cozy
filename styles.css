@@ -58,8 +58,22 @@ a {
 
 .brand {
   display: inline-flex;
-  flex-direction: column;
+  align-items: center;
+  flex-direction: row;
   width: fit-content;
+  gap: clamp(14px, 1.5vw, 18px);
+}
+
+.brand-mark {
+  width: clamp(58px, 5.2vw, 64px);
+  height: clamp(58px, 5.2vw, 64px);
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+.brand-copy {
+  display: inline-flex;
+  flex-direction: column;
   gap: 2px;
 }
 
@@ -762,6 +776,15 @@ h3 {
 
   .brand-name {
     font-size: 28px;
+  }
+
+  .brand {
+    gap: 10px;
+  }
+
+  .brand-mark {
+    width: 44px;
+    height: 44px;
   }
 
   .main-nav {
