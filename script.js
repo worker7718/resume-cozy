@@ -1,3 +1,4 @@
+const typewriterButtons = document.querySelectorAll(".button-typewriter");
 const musicWidget = document.querySelector("[data-music-widget]");
 const musicToggle = document.querySelector("[data-music-toggle]");
 const musicPlayer = document.querySelector("[data-music-player]");
@@ -24,6 +25,23 @@ const tracks = [
 let currentTrackIndex = 0;
 let isPlaying = false;
 let hasVisitedMusicWidget = false;
+
+const prepareTypewriterButton = (button) => {
+  const hoverText = button.querySelector(".button-hover-text");
+  const text = (button.dataset.writeText || hoverText?.textContent || "").trim();
+
+  if (!hoverText || !text) {
+    return;
+  }
+
+  const letterCount = Math.max(Array.from(text).length, 1);
+
+  hoverText.textContent = text;
+  button.style.setProperty("--letter-count", String(letterCount));
+  button.style.setProperty("--write-duration", `${Math.min(720, 220 + letterCount * 44)}ms`);
+};
+
+typewriterButtons.forEach(prepareTypewriterButton);
 
 const clampVolume = (volume) => Math.min(1, Math.max(0, volume));
 

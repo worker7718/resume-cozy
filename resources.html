@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resources | JCREATES</title>
+    <meta
+      name="description"
+      content="A warm resources library from JCREATES, including a beginner-friendly website care course."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@500;600;700&family=Parisienne&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css?v=20260603-resources">
+    <script src="script.js?v=20260603-resources" defer></script>
+  </head>
+  <body class="resources-page">
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="JCREATES home">
+        <img
+          class="brand-mark"
+          src="assets/elodie-flower-logo.png"
+          width="640"
+          height="640"
+          decoding="async"
+          alt=""
+        >
+        <span class="brand-copy">
+          <span class="brand-name">JCREATES</span>
+          <span class="brand-role">Design & Digital Creative</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#work">Work</a>
+        <a class="is-active" href="resources.html" aria-current="page">Resources</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <a class="header-cta" href="index.html#contact">Let's work together</a>
+    </header>
+
+    <main>
+      <section class="resources-hero" aria-labelledby="resources-title">
+        <div class="resources-hero-media" aria-hidden="true">
+          <img
+            src="assets/resources-hero-library.png"
+            width="2048"
+            height="768"
+            decoding="async"
+            fetchpriority="high"
+            alt=""
+          >
+        </div>
+        <div class="resources-hero-copy">
+          <h1 class="resources-hero-title" id="resources-title">Resources</h1>
+          <p>Courses, guides, and other content to support your design journey.</p>
+        </div>
+      </section>
+
+      <nav class="resource-tabs" aria-label="Resource categories">
+        <a class="resource-tab is-active" href="#courses" aria-current="page">Courses</a>
+      </nav>
+
+      <section class="resource-library" id="courses" aria-label="Courses">
+        <div class="resource-grid">
+          <article class="resource-card">
+            <a class="resource-cover" href="index.html#course" aria-label="Preview the Website Care Basics course">
+              <img
+                src="assets/hero-autumn-mountain-window.jpg"
+                width="1189"
+                height="1323"
+                decoding="async"
+                alt="Autumn trees and distant mountains seen through a warm window."
+              >
+              <span class="resource-cover-overlay" aria-hidden="true"></span>
+              <span class="resource-cover-copy">
+                <span class="resource-cover-label">Self-Paced Course</span>
+                <span class="resource-cover-title">Website Care Basics</span>
+              </span>
+            </a>
+
+            <div class="resource-card-copy">
+              <p class="resource-note">Beginner friendly</p>
+              <h3>Website Care Basics</h3>
+              <p>
+                A calm course for keeping your website updated, tidy, and cared
+                for once the designer has handed everything over.
+              </p>
+              <dl class="resource-meta">
+                <div>
+                  <dt>Format</dt>
+                  <dd>Self-paced lessons</dd>
+                </div>
+                <div>
+                  <dt>Made for</dt>
+                  <dd>Non-designers</dd>
+                </div>
+                <div>
+                  <dt>Includes</dt>
+                  <dd>Monthly care checklist</dd>
+                </div>
+              </dl>
+              <a class="project-link" href="index.html#course">View course</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 JCREATES</p>
+      <nav class="social-links" aria-label="Social links">
+        <a href="#" aria-label="Instagram">Ig</a>
+        <a href="#" aria-label="Pinterest">Pt</a>
+        <a href="#" aria-label="LinkedIn">In</a>
+        <a href="mailto:hello@example.com" aria-label="Email">Mail</a>
+      </nav>
+    </footer>
+
+    <div class="music-widget" data-music-widget>
+      <span class="music-label" id="music-label">Browsing Beats</span>
+      <div class="music-control-row">
+        <button
+          class="music-volume music-volume-down"
+          type="button"
+          aria-label="Lower browsing beats volume"
+          data-volume-action="down"
+        >
+          <span aria-hidden="true">&minus;</span>
+        </button>
+        <button
+          class="music-toggle"
+          type="button"
+          aria-label="Play browsing beats"
+          aria-describedby="music-label"
+          aria-pressed="false"
+          data-music-toggle
+        >
+          <span class="music-note" aria-hidden="true">&#9834;</span>
+        </button>
+        <button
+          class="music-volume music-volume-up"
+          type="button"
+          aria-label="Raise browsing beats volume"
+          data-volume-action="up"
+        >
+          <span aria-hidden="true">+</span>
+        </button>
+      </div>
+      <audio data-music-player preload="none"></audio>
+    </div>
+  </body>
+</html>

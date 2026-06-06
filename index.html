@@ -3,23 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Elodie Martin | Design & Digital Creative</title>
+    <title>JCREATES | Design & Digital Creative</title>
     <meta
       name="description"
-      content="A warm portfolio homepage for Elodie Martin, a design and digital creative studio."
+      content="A warm portfolio homepage for JCREATES, a design and digital creative studio."
     >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@500;600;700&family=Parisienne&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20260603-resources">
+    <script src="script.js?v=20260603-resources" defer></script>
   </head>
   <body>
     <header class="site-header" aria-label="Primary navigation">
-      <a class="brand" href="#" aria-label="Elodie Martin home">
+      <a class="brand" href="#" aria-label="JCREATES home">
         <img
           class="brand-mark"
           src="assets/elodie-flower-logo.png"
@@ -29,16 +29,15 @@
           alt=""
         >
         <span class="brand-copy">
-          <span class="brand-name">Elodie Martin</span>
+          <span class="brand-name">JCREATES</span>
           <span class="brand-role">Design & Digital Creative</span>
         </span>
       </a>
 
       <nav class="main-nav" aria-label="Main navigation">
-        <a class="is-active" href="#">Home</a>
+        <a class="is-active" href="#" aria-current="page">Home</a>
         <a href="#work">Work</a>
-        <a href="#services">Services</a>
-        <a href="#blog">Blog</a>
+        <a href="resources.html">Resources</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -57,8 +56,11 @@
             and honest content.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#work">View my work</a>
-            <a class="button button-text" href="#services">See services <span class="link-cue" aria-hidden="true"></span></a>
+            <a class="button button-primary button-typewriter" href="#work" data-write-text="View my work">
+              <span class="button-label">View my work</span>
+              <span class="button-hover-text" aria-hidden="true">View my work</span>
+            </a>
+            <a class="button button-text" href="resources.html">See resources <span class="link-cue" aria-hidden="true"></span></a>
           </div>
         </div>
 
@@ -127,19 +129,173 @@
         </div>
       </section>
 
+      <section class="course-section" id="course" aria-labelledby="course-title">
+        <img class="course-botanical" src="assets/botanical-tape.png" alt="">
+        <div class="section-heading course-heading">
+          <div class="section-kicker">
+            <span class="sprig" aria-hidden="true"></span>
+            <p class="eyebrow">Website Care Course</p>
+            <h2 id="course-title">Learn to tend your website after handoff.</h2>
+          </div>
+          <a class="section-link" href="#course-curriculum">View curriculum <span class="link-cue" aria-hidden="true"></span></a>
+        </div>
+
+        <div class="course-layout">
+          <article class="course-feature">
+            <p class="course-stamp">Beginner Friendly</p>
+            <h3>Website Care Basics</h3>
+            <p class="course-subtitle">
+              A practical course for anyone who has been handed a finished website and
+              wants to keep it up to date without a developer.
+            </p>
+            <div class="small-rule course-rule" aria-hidden="true"></div>
+            <p>
+              Learn how to make small copy and image updates, check the important moving
+              parts, keep your pages tidy, and spot the moments when it is time to call
+              someone in.
+            </p>
+            <dl class="course-details">
+              <div>
+                <dt>Format</dt>
+                <dd>Self-paced lessons</dd>
+              </div>
+              <div>
+                <dt>Made for</dt>
+                <dd>Non-designers</dd>
+              </div>
+              <div>
+                <dt>Includes</dt>
+                <dd>Monthly care checklist</dd>
+              </div>
+            </dl>
+            <div class="course-actions">
+              <a class="button button-primary button-typewriter" href="#contact" data-write-text="Request syllabus">
+                <span class="button-label">Request syllabus</span>
+                <span class="button-hover-text" aria-hidden="true">Request syllabus</span>
+              </a>
+              <a class="button button-text" href="#course-curriculum">Preview lessons <span class="link-cue" aria-hidden="true"></span></a>
+            </div>
+          </article>
+
+          <ol class="course-modules" id="course-curriculum" aria-label="Website care curriculum">
+            <li class="course-module">
+              <span class="module-number">01</span>
+              <div>
+                <h3>Basic navigation.</h3>
+                <p>Find your dashboard, pages, media, logins, and the few settings worth knowing by name.</p>
+              </div>
+            </li>
+            <li class="course-module">
+              <span class="module-number">02</span>
+              <div>
+                <h3>Make small changes gently.</h3>
+                <p>Update words, swap photos, and keep spacing, buttons, and headings from drifting out of tune.</p>
+              </div>
+            </li>
+            <li class="course-module">
+              <span class="module-number">03</span>
+              <div>
+                <h3>Check the pathways.</h3>
+                <p>Test menus, links, forms, mobile views, and checkout or booking steps before visitors find them.</p>
+              </div>
+            </li>
+            <li class="course-module">
+              <span class="module-number">04</span>
+              <div>
+                <h3>Keep the shelves tidy.</h3>
+                <p>Refresh services, projects, files, and seasonal notes without turning your site into a storage room.</p>
+              </div>
+            </li>
+            <li class="course-module">
+              <span class="module-number">05</span>
+              <div>
+                <h3>Care for the hidden things.</h3>
+                <p>Understand simple backups, updates, domains, analytics, and the quiet checks that keep a site steady.</p>
+              </div>
+            </li>
+            <li class="course-module">
+              <span class="module-number">06</span>
+              <div>
+                <h3>Know when to ask for help.</h3>
+                <p>Notice red flags, gather useful notes, and make the next designer or developer visit easier.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="ai-note-section" aria-labelledby="ai-note-title">
+        <div class="ai-note-inner">
+          <div class="ai-note-heading">
+            <h2 id="ai-note-title">
+              <span>If AI can do it all,</span>
+              <span>why hire a person?</span>
+            </h2>
+          </div>
+          <div class="ai-note-copy">
+            <p>
+              Great question! AI has huge capabilities, but it needs human guidance more than anything.
+              I have worked with and have experience with the following AI/Chatbots (check the
+              &ldquo;<a href="#work">My Work</a>&rdquo; page for more information!):
+            </p>
+            <ul class="ai-logo-list" aria-label="AI and chatbot experience">
+              <li>
+                <span class="ai-logo-mark" aria-hidden="true">
+                  <img src="assets/ai-logos/chatgpt.png" width="112" height="111" alt="">
+                </span>
+                <span class="ai-logo-word">ChatGPT</span>
+              </li>
+              <li>
+                <span class="ai-logo-mark" aria-hidden="true">
+                  <img src="assets/ai-logos/claude.png" width="142" height="142" alt="">
+                </span>
+                <span class="ai-logo-word">Claude</span>
+              </li>
+              <li>
+                <span class="ai-logo-mark" aria-hidden="true">
+                  <img src="assets/ai-logos/gemini.png" width="70" height="65" alt="">
+                </span>
+                <span class="ai-logo-word">Gemini</span>
+              </li>
+              <li>
+                <span class="ai-logo-mark" aria-hidden="true">
+                  <img src="assets/ai-logos/heygen.png" width="89" height="86" alt="">
+                </span>
+                <span class="ai-logo-word">HeyGen</span>
+              </li>
+              <li>
+                <span class="ai-logo-mark" aria-hidden="true">
+                  <img src="assets/ai-logos/perplexity.png" width="92" height="108" alt="">
+                </span>
+                <span class="ai-logo-word">Perplexity</span>
+              </li>
+              <li>
+                <span class="ai-logo-mark" aria-hidden="true">
+                  <img src="assets/ai-logos/codex.png" width="327" height="301" alt="">
+                </span>
+                <span class="ai-logo-word">Codex</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section class="closing-banner" id="contact" aria-labelledby="contact-title">
         <img class="botanical" src="assets/botanical-tape.png" alt="">
         <h2 id="contact-title">Let's create something <em>meaningful together.</em></h2>
         <div class="contact-note">
           <p>Have a project in mind or just want to say hello?</p>
           <p>I'd love to hear from you.</p>
-          <a class="button button-primary" href="mailto:hello@example.com">Get in touch</a>
+          <a class="button button-primary button-typewriter" href="mailto:hello@example.com" data-write-text="Get in touch">
+            <span class="button-label">Get in touch</span>
+            <span class="button-hover-text" aria-hidden="true">Get in touch</span>
+          </a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; 2026 Elodie Martin</p>
+      <p>&copy; 2026 JCREATES</p>
       <nav class="social-links" aria-label="Social links">
         <a href="#" aria-label="Instagram">Ig</a>
         <a href="#" aria-label="Pinterest">Pt</a>
