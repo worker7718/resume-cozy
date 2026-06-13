@@ -14,8 +14,8 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@500;600;700&family=Parisienne&display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="styles.css?v=20260603-resources">
-    <script src="script.js?v=20260603-resources" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20260611-work-page-v8">
+    <script src="script.js?v=20260611-work-page-v4" defer></script>
   </head>
   <body>
     <header class="site-header" aria-label="Primary navigation">
@@ -36,7 +36,7 @@
 
       <nav class="main-nav" aria-label="Main navigation">
         <a class="is-active" href="#" aria-current="page">Home</a>
-        <a href="#work">Work</a>
+        <a href="work.html">Work</a>
         <a href="resources.html">Resources</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -56,7 +56,7 @@
             and honest content.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary button-typewriter" href="#work" data-write-text="View my work">
+            <a class="button button-primary button-typewriter" href="work.html" data-write-text="View my work">
               <span class="button-label">View my work</span>
               <span class="button-hover-text" aria-hidden="true">View my work</span>
             </a>
@@ -76,56 +76,42 @@
         </div>
       </section>
 
-      <section class="featured-work" id="work" aria-labelledby="work-title">
-        <div class="section-heading">
-          <div class="section-kicker">
-            <span class="sprig" aria-hidden="true"></span>
-            <p class="eyebrow">Featured Work</p>
-            <h2 id="work-title">A few favorites.</h2>
+      <section class="experience-section" id="experience" aria-labelledby="experience-title">
+        <div class="experience-inner">
+          <div class="experience-layout">
+            <div class="experience-heading">
+              <h2 id="experience-title">Over a decade of experience.</h2>
+            </div>
+
+            <div class="experience-copy">
+              <p>
+                Since 2010, I&rsquo;ve worked across the creative industry on business proposals,
+                brochures, social media, and digital assets that do more than look good.
+                Thoughtful creative work can clarify a message, build trust, and help people
+                understand the value of a business before a conversation even begins.
+              </p>
+
+              <dl class="experience-ledger" aria-label="Creative experience areas">
+                <div>
+                  <dt>Since</dt>
+                  <dd>2010</dd>
+                </div>
+                <div>
+                  <dt>Across</dt>
+                  <dd>Print &amp; digital</dd>
+                </div>
+                <div>
+                  <dt>Focus</dt>
+                  <dd>Useful brand assets</dd>
+                </div>
+              </dl>
+            </div>
           </div>
-          <a class="section-link" href="#work">View all projects <span class="link-cue" aria-hidden="true"></span></a>
-        </div>
 
-        <div class="project-grid">
-          <article class="project-card">
-            <a href="#work" aria-label="View Maison Duvet project">
-              <img src="assets/project-maison-duvet.png" alt="Maison Duvet visual identity on warm paper.">
-            </a>
-            <h3>Maison Duvet</h3>
-            <p class="project-type">Web Design & Branding</p>
-            <p>A soft, elevated brand and website for a homewares studio.</p>
-            <a class="project-link" href="#work" aria-label="View Maison Duvet project">View project</a>
-          </article>
-
-          <article class="project-card">
-            <a href="#work" aria-label="View Sage Atelier project">
-              <img src="assets/project-sage-atelier.png" alt="Sage Atelier mobile social media layout.">
-            </a>
-            <h3>Sage Atelier</h3>
-            <p class="project-type">Social Media & Content Design</p>
-            <p>Content strategy and custom templates that bring warmth and consistency.</p>
-            <a class="project-link" href="#work" aria-label="View Sage Atelier project">View project</a>
-          </article>
-
-          <article class="project-card">
-            <a href="#work" aria-label="View Cafe Lumiere project">
-              <img src="assets/project-cafe-lumiere.png" alt="Cafe Lumiere dark website concept with coffee cup.">
-            </a>
-            <h3>Cafe Lumiere</h3>
-            <p class="project-type">Web Design</p>
-            <p>A one-page website for a neighborhood cafe, built to feel calm and timeless.</p>
-            <a class="project-link" href="#work" aria-label="View Cafe Lumiere project">View project</a>
-          </article>
-
-          <article class="project-card">
-            <a href="#work" aria-label="View Terre and Co project">
-              <img src="assets/project-terre-co.png" alt="Terre and Co botanical brand identity materials.">
-            </a>
-            <h3>Terre & Co.</h3>
-            <p class="project-type">Brand Identity</p>
-            <p>Brand identity and visual system for a sustainable goods brand rooted in earthy values.</p>
-            <a class="project-link" href="#work" aria-label="View Terre and Co project">View project</a>
-          </article>
+          <a class="galaxy-work-link" href="work.html" aria-label="View selected work">
+            <span class="galaxy-mask">View selected work</span>
+            <span class="galaxy-arrow" aria-hidden="true"></span>
+          </a>
         </div>
       </section>
 
@@ -133,7 +119,6 @@
         <img class="course-botanical" src="assets/botanical-tape.png" alt="">
         <div class="section-heading course-heading">
           <div class="section-kicker">
-            <span class="sprig" aria-hidden="true"></span>
             <p class="eyebrow">Website Care Course</p>
             <h2 id="course-title">Learn to tend your website after handoff.</h2>
           </div>
@@ -236,7 +221,7 @@
             <p>
               Great question! AI has huge capabilities, but it needs human guidance more than anything.
               I have worked with and have experience with the following AI/Chatbots (check the
-              &ldquo;<a href="#work">My Work</a>&rdquo; page for more information!):
+              &ldquo;<a href="work.html">My Work</a>&rdquo; page for more information!):
             </p>
             <ul class="ai-logo-list" aria-label="AI and chatbot experience">
               <li>
