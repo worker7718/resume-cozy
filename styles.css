@@ -1439,17 +1439,11 @@ h3 {
 }
 
 .work-page:has(#work-filter-all:checked) [data-work-copy="all"],
-.work-page:has(#work-filter-web:checked) [data-work-copy="web"],
-.work-page:has(#work-filter-social:checked) [data-work-copy="social"],
-.work-page:has(#work-filter-branding:checked) [data-work-copy="branding"],
-.work-page:has(#work-filter-digital:checked) [data-work-copy="digital"] {
+.work-page:has(#work-filter-web:checked) [data-work-copy="web"] {
   display: block;
 }
 
-.work-page:has(#work-filter-web:checked) [data-work-category]:not([data-work-category="web"]),
-.work-page:has(#work-filter-social:checked) [data-work-category]:not([data-work-category="social"]),
-.work-page:has(#work-filter-branding:checked) [data-work-category]:not([data-work-category="branding"]),
-.work-page:has(#work-filter-digital:checked) [data-work-category]:not([data-work-category="digital"]) {
+.work-page:has(#work-filter-web:checked) [data-work-category]:not([data-work-category="web"]) {
   display: none;
 }
 
