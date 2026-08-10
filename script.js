@@ -3,6 +3,8 @@ const musicWidget = document.querySelector("[data-music-widget]");
 const musicToggle = document.querySelector("[data-music-toggle]");
 const musicPlayer = document.querySelector("[data-music-player]");
 const volumeControls = document.querySelectorAll("[data-volume-action]");
+const contactForm = document.querySelector("[data-contact-form]");
+const contactFeedback = document.querySelector("[data-contact-feedback]");
 
 const defaultVolume = 0.17;
 const volumeStep = 0.12;
@@ -192,5 +194,19 @@ if (musicWidget && musicToggle && musicPlayer && tracks.length > 0) {
   musicPlayer.addEventListener("error", () => {
     updatePlaybackState(false);
     musicToggle.setAttribute("aria-label", "Audio could not be played");
+  });
+}
+
+if (contactForm && contactFeedback) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    if (!contactForm.checkValidity()) {
+      contactForm.reportValidity();
+      return;
+    }
+
+    contactFeedback.hidden = false;
+    contactForm.reset();
   });
 }
